@@ -1,0 +1,19 @@
+Only assets/minecraft/lang/en_us.json is stored inside the client JAR (versions/<version>/<version>.jar).
+
+To open other languages' definition files:
+python
+import json
+import os
+version = "1.16"
+lang = u"ja_jp"
+assets_dir = os.path.join(os.getenv("APPDATA"), ".minecraft", "assets")
+lang_hash = json.load(file(os.path.join(assets_dir, "indexes", version + ".json")))[u'objects'][u'minecraft/lang/' + lang + '.json'][u'hash']
+i18n = json.load(file(os.path.join(assets_dir, "objects", lang_hash[:2], lang_hash)))
+
+To display decoded JSON escaped strings:
+print i18n[u'item.minecraft.diamond_sword']
+or
+print json.loads('"\u30c0\u30a4\u30e4\u30e2\u30f3\u30c9\u306e\u5263"')
+
+To encode a JSON escaped string:
+print json.dumps('ルビーの剣')

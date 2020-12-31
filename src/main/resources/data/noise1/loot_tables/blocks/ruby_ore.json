@@ -1,17 +1,17 @@
 {
-	"type": "minecraft:block",
-	"pools": [
-		{
-			"rolls": 5,
-			"entries": [ {
-					"type": "minecraft:item",
-					"name": "noise1:ruby_ore"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "noise1:ruby"
-				}
-			]
-		}
-	]
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 5,
+            "entries": [ {
+                    "type": "minecraft:item",
+                    "name": "noise1:ruby_ore"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "noise1:ruby"
+                }
+            ]
+        }
+    ]
 }

@@ -1,5 +1,11 @@
 {
-	"item.noise1.ruby": "ルビー",
-	"item.noise1.ruby_sword": "ルビー ソード",
-	"block.noise1.ruby_ore": "ルビー鉱石"
+    "itemGroup.noise1": "Noise One",
+    "block.noise1.ruby_ore": "\u30eb\u30d3\u30fc\u9271\u77f3",
+    "block.noise1.ruby_block": "\u30eb\u30d3\u30fc\u30d6\u30ed\u30c3\u30af",
+    "item.noise1.ruby": "\u30eb\u30d3\u30fc",
+    "item.noise1.ruby_sword": "\u30eb\u30d3\u30fc\u306e\u5263",
+    "item.noise1.ruby_shovel": "\u30eb\u30d3\u30fc\u306e\u30b7\u30e3\u30d9\u30eb",
+    "item.noise1.ruby_pickaxe": "\u30eb\u30d3\u30fc\u306e\u30c4\u30eb\u30cf\u30b7",
+    "item.noise1.ruby_axe": "\u30eb\u30d3\u30fc\u306e\u65a7",
+    "item.noise1.ruby_hoe": "\u30eb\u30d3\u30fc\u306e\u30af\u30ef"
 }

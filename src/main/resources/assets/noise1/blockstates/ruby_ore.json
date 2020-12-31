@@ -1,5 +1,5 @@
 {
-	"variants": {
-		"": {"model": "noise1:block/ruby_ore"}
-	}
+    "variants": {
+        "": {"model": "noise1:block/ruby_ore"}
+    }
 }

@@ -1,6 +1,11 @@
 {
-	"itemGroup.noise1": "Noise One",
-	"item.noise1.ruby": "Ruby",
-	"item.noise1.ruby_sword": "Ruby Sword",
-	"block.noise1.ruby_ore": "Ruby Ore"
+    "itemGroup.noise1": "Noise One",
+    "block.noise1.ruby_ore": "Ruby Ore",
+    "block.noise1.ruby_block": "Ruby Block",
+    "item.noise1.ruby": "Ruby",
+    "item.noise1.ruby_sword": "Ruby Sword",
+    "item.noise1.ruby_shovel": "Ruby Shovel",
+    "item.noise1.ruby_pickaxe": "Ruby Pickaxe",
+    "item.noise1.ruby_axe": "Ruby Axe",
+    "item.noise1.ruby_hoe": "Ruby Hoe"
 }

@@ -16,15 +16,15 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(NoiseOne.MOD_ID)
 @Mod.EventBusSubscriber(modid = NoiseOne.MOD_ID, bus = Bus.MOD)
 public class BlockInit {
-	public static final Block ruby_ore = null;
+    public static final Block ruby_ore = null;
 
-	@SubscribeEvent
-	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
-		event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.0F, 3.0F)).setRegistryName("ruby_ore"));
-	}
+    @SubscribeEvent
+    public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.0F, 3.0F)).setRegistryName("ruby_ore"));
+    }
 
-	@SubscribeEvent
-	public static void registerBlocksItems(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("ruby_ore"));
-	}
+    @SubscribeEvent
+    public static void registerBlocksItems(final RegistryEvent.Register<Item> event) {
+        event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName("ruby_ore"));
+    }
 }

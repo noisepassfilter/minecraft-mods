@@ -34,17 +34,17 @@ public class NoiseOne
     public static NoiseOne noiseOne;
 
     public NoiseOne() {
-    	noiseOne = this;
+        noiseOne = this;
 
-    	final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the setup method for modloading
-    	modEventBus.addListener(noiseOne::setup);
+        modEventBus.addListener(noiseOne::setup);
         // Register the enqueueIMC method for modloading
-    	modEventBus.addListener(noiseOne::enqueueIMC);
+        modEventBus.addListener(noiseOne::enqueueIMC);
         // Register the processIMC method for modloading
-    	modEventBus.addListener(noiseOne::processIMC);
+        modEventBus.addListener(noiseOne::processIMC);
         // Register the doClientStuff method for modloading
-    	modEventBus.addListener(noiseOne::doClientStuff);
+        modEventBus.addListener(noiseOne::doClientStuff);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(noiseOne);
@@ -95,14 +95,14 @@ public class NoiseOne
 
     public static class NoiseOneItemGroup extends ItemGroup {
 
-    	public static final NoiseOneItemGroup instance = new NoiseOneItemGroup(ItemGroup.GROUPS.length, "noise1");
-    	private NoiseOneItemGroup(int index, String label) {
-    		super(index, label);
-    	}
+        public static final NoiseOneItemGroup instance = new NoiseOneItemGroup(ItemGroup.GROUPS.length, "noise1");
+        private NoiseOneItemGroup(int index, String label) {
+            super(index, label);
+        }
 
-    	@Override
-    	public ItemStack createIcon() {
-    		return new ItemStack(BlockInit.ruby_ore);
-    	}
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(BlockInit.ruby_ore);
+        }
     }
 }
