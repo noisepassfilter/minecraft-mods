@@ -2,6 +2,7 @@ package com.harenochipine.minecraft.mods.noise1.init;
 
 import com.harenochipine.minecraft.mods.noise1.NoiseOne;
 import com.harenochipine.minecraft.mods.noise1.NoiseOne.NoiseOneItemGroup;
+import com.harenochipine.minecraft.mods.noise1.objects.items.RubyItem;
 
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -24,10 +25,17 @@ public class ItemInit {
 
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
+		//Just a ruby
 		//event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("ruby"));
-		event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby"));
+		//Edible ruby
+		//event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby"));
+		//Edible enchanted ruby
+		event.getRegistry().register(new RubyItem(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby"));
+		//Just an item
 		//event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("ruby_sword"));
+		//Sword in the COMBAT group
 		//event.getRegistry().register(new SwordItem(ItemTier.DIAMOND, 15, -2.4F, (new Item.Properties()).group(ItemGroup.COMBAT)).setRegistryName("ruby_sword"));
+		//Sword in the mod's group
 		event.getRegistry().register(new SwordItem(ItemTier.DIAMOND, 15, -2.4F, (new Item.Properties()).group(NoiseOneItemGroup.instance)).setRegistryName("ruby_sword"));
 	}
 }
