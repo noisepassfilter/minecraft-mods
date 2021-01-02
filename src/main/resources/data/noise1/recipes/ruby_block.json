@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "noise1:ruby"
+    }
+  },
+  "result": {
+    "item": "noise1:ruby_block"
+  }
+}

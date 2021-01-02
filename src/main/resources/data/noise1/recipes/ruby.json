@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "noise1:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "noise1:ruby",
+    "count": 9
+  }
+}
