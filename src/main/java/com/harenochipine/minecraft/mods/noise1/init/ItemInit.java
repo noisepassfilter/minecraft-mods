@@ -26,6 +26,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(modid = NoiseOne.MOD_ID, bus = Bus.MOD)
 public class ItemInit {
     public static final Item ruby = null;
+    public static final Item ruby_edible = null;
     public static final Item ruby_sword = null;
     public static final Item ruby_shovel = null;
     public static final Item ruby_pickaxe = null;
@@ -40,7 +41,8 @@ public class ItemInit {
         //Edible ruby
         //event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby"));
         //Edible enchanted ruby
-        regitry.register(new RubyItem(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby"));
+        regitry.register(new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("ruby"));
+        regitry.register(new RubyItem(new Item.Properties().group(ItemGroup.MATERIALS).food(new Food.Builder().hunger(6).saturation(1.2f).effect(() -> new EffectInstance(Effects.HASTE, 6000, 5), 1).build())).setRegistryName("ruby_edible"));
         //Sword as just an item
         //event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("ruby_sword"));
         //Sword in the COMBAT group
