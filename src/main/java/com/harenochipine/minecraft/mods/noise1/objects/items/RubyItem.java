@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class RubyItem extends Item {
-   public RubyItem(Item.Properties builder) {
+   public RubyItem(Properties builder) {
       super(builder);
    }
 

@@ -2,6 +2,7 @@ package com.harenochipine.minecraft.mods.noise1.init;
 
 import com.harenochipine.minecraft.mods.noise1.NoiseOne;
 import com.harenochipine.minecraft.mods.noise1.NoiseOne.NoiseOneItemGroup;
+import com.harenochipine.minecraft.mods.noise1.objects.items.MagicWandItem;
 import com.harenochipine.minecraft.mods.noise1.objects.items.NoiseOneItemTier;
 import com.harenochipine.minecraft.mods.noise1.objects.items.RubyItem;
 
@@ -32,6 +33,7 @@ public class ItemInit {
     public static final Item ruby_pickaxe = null;
     public static final Item ruby_axe = null;
     public static final Item ruby_hoe = null;
+    public static final Item magic_wand = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -53,5 +55,6 @@ public class ItemInit {
         regitry.register(new PickaxeItem(NoiseOneItemTier.RUBY, 1, -2.8F, (new Item.Properties()).group(NoiseOneItemGroup.instance)).setRegistryName("ruby_pickaxe"));
         regitry.register(new AxeItem(NoiseOneItemTier.RUBY, 5.0F, -3.0F, (new Item.Properties()).group(NoiseOneItemGroup.instance)).setRegistryName("ruby_axe"));
         regitry.register(new HoeItem(NoiseOneItemTier.RUBY, -3, 0.0F, (new Item.Properties()).group(NoiseOneItemGroup.instance)).setRegistryName("ruby_hoe"));
+        regitry.register(new MagicWandItem(new Item.Properties().group(NoiseOneItemGroup.instance)).setRegistryName("magic_wand"));
     }
 }

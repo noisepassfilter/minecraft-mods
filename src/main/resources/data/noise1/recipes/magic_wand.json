@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  A",
+    " # ",
+    "X  "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:quartz"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "noise1:rubies"
+    }
+  },
+  "result": {
+    "item": "noise1:magic_wand"
+  }
+}
