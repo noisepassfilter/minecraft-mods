@@ -2,6 +2,7 @@
     "itemGroup.noise1": "Noise One",
     "block.noise1.ruby_ore": "\u30eb\u30d3\u30fc\u9271\u77f3",
     "block.noise1.ruby_block": "\u30eb\u30d3\u30fc\u30d6\u30ed\u30c3\u30af",
+    "block.noise1.juice_mixer": "\u30b8\u30e5\u30fc\u30b9\u30df\u30ad\u30b5\u30fc",
     "item.noise1.ruby": "\u30eb\u30d3\u30fc",
     "item.noise1.ruby_edible": "\u30eb\u30d3\u30fc",
     "item.noise1.ruby_sword": "\u30eb\u30d3\u30fc\u306e\u5263",

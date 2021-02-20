@@ -1,4 +1,4 @@
-package com.harenochipine.minecraft.mods.noise1.objects.items;
+package com.harenochipine.minecraft.mods.noise1.objects.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
