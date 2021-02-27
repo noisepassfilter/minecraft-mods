@@ -1,0 +1,5 @@
+- Download recommended MDK from http://files.minecraftforge.net/
+- Extract to mod source directory
+- Execute from cmd.exe, from the mod directory:
+gradlew genEclipseRuns --refresh-dependencies && gradlew eclipse
+- In Eclipse, File -> Import -> Existing Gradle Project

@@ -18,7 +18,7 @@ public enum NoiseOneItemTier implements IItemTier {
     //GOLD     (      0,   32,     12.0F,  0.0F,     22, Ingredient.fromItems(Items.GOLD_INGOT);
     //NETHERITE(      4, 2031,      9.0F,  4.0F,     15, Ingredient.fromItems(Items.NETHERITE_INGOT);
     RUBY(3, 1801, 10.0F, 4.0F, 20, () -> {
-        return Ingredient.fromItems(ItemInit.ruby);
+        return Ingredient.fromItems(ItemInit.RUBY.get());
     });
 
     private final int harvestLevel;
