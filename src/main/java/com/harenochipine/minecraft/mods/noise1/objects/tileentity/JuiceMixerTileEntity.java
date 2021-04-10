@@ -1,7 +1,5 @@
 package com.harenochipine.minecraft.mods.noise1.objects.tileentity;
 
-import com.harenochipine.minecraft.mods.noise1.init.TileEntityInit;
-
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
@@ -14,7 +12,7 @@ public class JuiceMixerTileEntity extends TileEntity implements ITickableTileEnt
 	}
 
 	public JuiceMixerTileEntity() {
-		this(TileEntityInit.JUICE_MIXER.get());
+		this(TileEntitiesInit.JUICE_MIXER.get());
 		// TODO Auto-generated constructor stub
 	}
 

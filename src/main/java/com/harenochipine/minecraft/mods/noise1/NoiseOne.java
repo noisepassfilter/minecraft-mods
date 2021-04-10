@@ -5,9 +5,9 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.harenochipine.minecraft.mods.noise1.init.BlockInit;
-import com.harenochipine.minecraft.mods.noise1.init.ItemInit;
-import com.harenochipine.minecraft.mods.noise1.init.TileEntityInit;
+import com.harenochipine.minecraft.mods.noise1.objects.block.BlocksInit;
+import com.harenochipine.minecraft.mods.noise1.objects.item.ItemsInit;
+import com.harenochipine.minecraft.mods.noise1.objects.tileentity.TileEntitiesInit;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -43,7 +43,7 @@ public class NoiseOne
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(BlockInit.RUBY_ORE.get());
+            return new ItemStack(BlocksInit.RUBY_ORE.get());
         }
     }
 
@@ -68,9 +68,9 @@ public class NoiseOne
         modEventBus.addListener(noiseOne::doClientStuff);
 
         LOGGER.info("{}:deferred register", MOD_ID);
-		BlockInit.BLOCKS.register(modEventBus);
-		ItemInit.ITEMS.register(modEventBus);
-		TileEntityInit.TILE_ENTITIES.register(modEventBus);
+		BlocksInit.BLOCKS.register(modEventBus);
+		ItemsInit.ITEMS.register(modEventBus);
+		TileEntitiesInit.TILE_ENTITIES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(noiseOne);

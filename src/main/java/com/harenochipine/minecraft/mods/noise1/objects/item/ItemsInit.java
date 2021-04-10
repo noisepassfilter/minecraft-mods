@@ -1,10 +1,8 @@
-package com.harenochipine.minecraft.mods.noise1.init;
+package com.harenochipine.minecraft.mods.noise1.objects.item;
 
 import com.harenochipine.minecraft.mods.noise1.NoiseOne;
 import com.harenochipine.minecraft.mods.noise1.NoiseOne.NoiseOneItemGroup;
-import com.harenochipine.minecraft.mods.noise1.objects.item.MagicWandItem;
-import com.harenochipine.minecraft.mods.noise1.objects.item.NoiseOneItemTier;
-import com.harenochipine.minecraft.mods.noise1.objects.item.RubyItem;
+import com.harenochipine.minecraft.mods.noise1.objects.block.BlocksInit;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
@@ -24,7 +22,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 //@ObjectHolder(NoiseOne.MOD_ID)
 //@Mod.EventBusSubscriber(modid = NoiseOne.MOD_ID, bus = Bus.MOD)
-public class ItemInit {
+public class ItemsInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, NoiseOne.MOD_ID);
 
 	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties().group(ItemGroup.MATERIALS)));
@@ -36,10 +34,10 @@ public class ItemInit {
 	public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItem(NoiseOneItemTier.RUBY, -3, 0.0F, (new Item.Properties()).group(NoiseOneItemGroup.instance)));
 	public static final RegistryObject<Item> MAGIC_WAND = ITEMS.register("magic_wand", () -> new MagicWandItem(new Item.Properties().group(NoiseOneItemGroup.instance)));
 
-	public static final RegistryObject<BlockItem> RUBY_ORE = ITEMS.register("ruby_ore", () -> new BlockItem(BlockInit.RUBY_ORE.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
-	public static final RegistryObject<BlockItem> RUBY_BLOCK = ITEMS.register("ruby_block", () -> new BlockItem(BlockInit.RUBY_BLOCK.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
-	public static final RegistryObject<BlockItem> JUICE_MIXER = ITEMS.register("juice_mixer", () -> new BlockItem(BlockInit.JUICE_MIXER.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
-	public static final RegistryObject<BlockItem> QUARRY = ITEMS.register("quarry", () -> new BlockItem(BlockInit.QUARRY.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
+	public static final RegistryObject<BlockItem> RUBY_ORE = ITEMS.register("ruby_ore", () -> new BlockItem(BlocksInit.RUBY_ORE.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
+	public static final RegistryObject<BlockItem> RUBY_BLOCK = ITEMS.register("ruby_block", () -> new BlockItem(BlocksInit.RUBY_BLOCK.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
+	public static final RegistryObject<BlockItem> JUICE_MIXER = ITEMS.register("juice_mixer", () -> new BlockItem(BlocksInit.JUICE_MIXER.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
+	public static final RegistryObject<BlockItem> QUARRY = ITEMS.register("quarry", () -> new BlockItem(BlocksInit.QUARRY.get(), new Item.Properties().group(NoiseOneItemGroup.instance)));
 	/*
     public static final Item ruby = null;
     public static final Item ruby_edible = null;

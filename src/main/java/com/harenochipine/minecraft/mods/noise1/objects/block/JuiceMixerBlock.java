@@ -1,6 +1,6 @@
 package com.harenochipine.minecraft.mods.noise1.objects.block;
 
-import com.harenochipine.minecraft.mods.noise1.init.TileEntityInit;
+import com.harenochipine.minecraft.mods.noise1.objects.tileentity.TileEntitiesInit;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -19,6 +19,6 @@ public class JuiceMixerBlock extends Block {
 
 	@Override
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return TileEntityInit.JUICE_MIXER.get().create();
+		return TileEntitiesInit.JUICE_MIXER.get().create();
 	}
 }

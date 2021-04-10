@@ -1,8 +1,6 @@
-package com.harenochipine.minecraft.mods.noise1.init;
+package com.harenochipine.minecraft.mods.noise1.objects.block;
 
 import com.harenochipine.minecraft.mods.noise1.NoiseOne;
-import com.harenochipine.minecraft.mods.noise1.objects.block.JuiceMixerBlock;
-import com.harenochipine.minecraft.mods.noise1.objects.block.QuarryBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -12,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 //@ObjectHolder(NoiseOne.MOD_ID)
 //@Mod.EventBusSubscriber(modid = NoiseOne.MOD_ID, bus = Bus.MOD)
-public class BlockInit {
+public class BlocksInit {
     //public static final Block ruby_ore = null;
     //public static final Block ruby_block = null;
     //public static final Block juice_mixer = null;

@@ -2,7 +2,6 @@ package com.harenochipine.minecraft.mods.noise1.objects.tileentity;
 
 import javax.annotation.Nullable;
 
-import com.harenochipine.minecraft.mods.noise1.init.TileEntityInit;
 import com.harenochipine.minecraft.mods.noise1.util.helpers.NBTHelper;
 
 import net.minecraft.block.Block;
@@ -27,7 +26,7 @@ public class QuarryTileEntity extends TileEntity implements ITickableTileEntity 
 	}
 
 	public QuarryTileEntity() {
-		this(TileEntityInit.QUARRY.get());
+		this(TileEntitiesInit.QUARRY.get());
 	}
 
 	@Override
